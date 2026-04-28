@@ -3,51 +3,51 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Выживание",
+    description: "Классическое выживание с уникальными механиками, кастомными биомами и эпическими боссами. Собери команду и завоюй мир.",
+    icon: "sword",
+    badge: "Хит",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Анти-грифер защита",
+    description: "Твой дом и постройки под надёжной защитой. Система регионов и логов позволяет вернуть любой блок.",
+    icon: "shield",
+    badge: "Безопасно",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
+    title: "Мини-игры",
+    description: "BedWars, SkyWars, Hunger Games и ещё десятки режимов. Каждый день — новые события и турниры.",
+    icon: "game",
+    badge: "PvP",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
+    title: "Экономика",
+    description: "Торгуй на аукционе, открывай магазины, зарабатывай монеты и становись самым богатым игроком сервера.",
+    icon: "coins",
+    badge: "Торговля",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "Кастомные плагины",
+    description: "Уникальные плагины, написанные специально для нашего сервера. Нигде больше ты такого не найдёшь.",
+    icon: "star",
+    badge: "Уникально",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Активное сообщество",
+    description: "Тысячи игроков онлайн каждый день. Discord, события, конкурсы и дружелюбные администраторы 24/7.",
+    icon: "community",
+    badge: "24/7",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="features" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-orbitron">Режимы и возможности</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Всё, что нужно для незабываемой игры — на одном сервере
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "sword" && "⚔️"}
+                    {feature.icon === "shield" && "🛡️"}
+                    {feature.icon === "game" && "🎮"}
+                    {feature.icon === "coins" && "💰"}
+                    {feature.icon === "star" && "⭐"}
+                    {feature.icon === "community" && "👥"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}

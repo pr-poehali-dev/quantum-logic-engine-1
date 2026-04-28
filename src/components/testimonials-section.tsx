@@ -3,25 +3,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
-    name: "Елена Родригес",
-    role: "Директор по нейронауке, Quantum Dynamics",
-    avatar: "/professional-woman-scientist.png",
+    name: "Артём_Крафтер",
+    role: "Игрок, 2 года на сервере",
+    avatar: "/placeholder-user.jpg",
     content:
-      "SynapseAI изменил наш подход к нейрореабилитации. Результаты пациентов улучшились на 340% после внедрения.",
+      "CraftZONE — лучшее место для выживания. Тут всегда есть с кем поиграть, админы отзывчивые, а грифферов нет вообще. Уже 2 года не могу уйти!",
   },
   {
-    name: "Маркус Уильямс",
-    role: "Руководитель исследований, Stellar Analytics",
-    avatar: "/cybersecurity-expert-man.jpg",
+    name: "NightBuilder",
+    role: "Строитель, топ-1 рейтинга",
+    avatar: "/placeholder-user.jpg",
     content:
-      "Точность и протоколы безопасности не имеют аналогов. Мы значительно ускорили клинические испытания с платформой SynapseAI.",
+      "Нигде больше нет таких инструментов для строительства. Плагины, регионы, кастомные блоки — рай для билдера. Мои постройки наконец-то в безопасности.",
   },
   {
-    name: "Анна Ковальски",
-    role: "Вице-президент по разработке, Nova Industries",
-    avatar: "/asian-woman-tech-developer.jpg",
+    name: "SkyWarrior99",
+    role: "PvP-игрок, 500+ побед",
+    avatar: "/placeholder-user.jpg",
     content:
-      "Интеграция прошла безупречно. Адаптивные алгоритмы понимают намерения пользователя лучше любой системы, что мы тестировали.",
+      "BedWars на CraftZONE — отдельная история. Честные бои, нормальный анти-чит и всегда полные лобби. Каждый день по несколько часов тут провожу.",
   },
 ]
 
@@ -30,9 +30,9 @@ export function TestimonialsSection() {
     <section className="py-24 px-6 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры</h2>
+          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-orbitron">Нам доверяют игроки</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорят лидеры индустрии о нашей революционной технологии
+            Что говорят те, кто уже играет на CraftZONE
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export function TestimonialsSection() {
                     </AvatarFallback>
                   </Avatar>
                   <div>
-                    <p className="font-semibold text-primary">{testimonial.name}</p>
+                    <p className="font-semibold text-card-foreground font-orbitron">{testimonial.name}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                   </div>
                 </div>
